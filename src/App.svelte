@@ -20,8 +20,10 @@
 	<h1>Hello {name}!</h1>
 	<p>{beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
+	<input type="text">
+	
+
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<img src={imgSrc}>
-	
 </main>
 
