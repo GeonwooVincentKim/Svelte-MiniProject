@@ -1,7 +1,7 @@
 <script>
 	let name = "Vincent";
 	let beltColour = "Black";
-	let src = 'images.jpg';
+	let imgSrc = "images.png";
 
 	const handleClick = () => {
 		beltColour = 'orange';
@@ -13,7 +13,7 @@
 	<p>{beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
 	<!-- svelte-ignore a11y-missing-attribute -->
-	<img src={src}>
+	<img src={imgSrc}>
 </main>
 
 <style>
