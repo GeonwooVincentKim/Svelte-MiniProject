@@ -1,7 +1,7 @@
 <script>
 	let name = "Vincent";
 	let beltColour = "Black";
-	let src = "";
+	let src = 'images.jpg';
 
 	const handleClick = () => {
 		beltColour = 'orange';
@@ -12,6 +12,8 @@
 	<h1>Hello {name}!</h1>
 	<p>{beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
+	<!-- svelte-ignore a11y-missing-attribute -->
+	<img src={src}>
 </main>
 
 <style>
