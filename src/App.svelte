@@ -1,6 +1,14 @@
 <script>
 	let name = "Vincent";
 	let beltColour = "Black";
+
+	/*
+	  1. Make sure you have to convert file-form
+		 as 'png' not 'jpg'.
+	  
+	  2. You should save your file into public file-directory,
+	     not to create a new one in file-directory named 'src'.
+	*/
 	let imgSrc = "images.png";
 
 	const handleClick = () => {
