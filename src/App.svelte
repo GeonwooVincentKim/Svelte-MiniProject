@@ -25,7 +25,7 @@
 	<h1>Hello {name}!</h1>
 	<p>{beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
-	<input type="text" on:input={handleInput}>
+	<input type="text" on:input={handleInput} value={beltColour}>
 	
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<img src={imgSrc}>
