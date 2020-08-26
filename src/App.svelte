@@ -1,6 +1,6 @@
 <script>
 	let name = "Vincent";
-	let beltColour = "Black";
+	let beltColour = "black";
 
 	/*
 	  1. Make sure you have to convert file-form
@@ -23,10 +23,18 @@
 
 <main>
 	<h1>Hello {name}!</h1>
-	<p>{beltColour} belt</p>
+	<p style="color: {beltColour}">{beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
-	<input type="text" on:input={handleInput} value={beltColour}>
+
+	<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
+	<!-- <input type="text" on:input={handleInput} value={beltColour}> -->
 	
+	<!-- 
+		One way bounding, but it controlls all of things 
+		by using 'beltColour'. 
+	-->
+	<input type="text" bind:value={beltColour}>
+
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<img src={imgSrc}>
 </main>
