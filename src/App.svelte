@@ -2,11 +2,16 @@
 	let name = "Vincent";
 	let beltColour = "Black";
 	let src = "";
+
+	const handleClick = () => {
+		beltColour = 'orange';
+	};
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>{beltColour} belt</p>
+	<button on:click={handleClick}>Update belt colour</button>
 </main>
 
 <style>
