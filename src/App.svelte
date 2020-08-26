@@ -14,15 +14,19 @@
 	const handleClick = () => {
 		beltColour = 'orange';
 	};
+	
+	const handleInput = (e) => {
+		// Update on Screen in Real-Time.
+		beltColour = e.target.value;
+	};
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>{beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
-	<input type="text">
+	<input type="text" on:input={handleInput}>
 	
-
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<img src={imgSrc}>
 </main>
