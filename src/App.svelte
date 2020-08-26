@@ -1,11 +1,12 @@
 <script>
 	let name = "Vincent";
+	let beltColour = "Black";
 	let src = "";
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<p>Hello {name}!</p>
+	<p>{beltColour} belt</p>
 </main>
 
 <style>
