@@ -102,3 +102,13 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+### Saving Image-files
+
+Download `Your Image` and put that file into
+file-directory, `public`.
+
+```
+public
+  -> images.jpg
+```
