@@ -1,9 +1,11 @@
 <script>
 	let name = "Vincent";
+	let src = "";
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
+	<p>Hello {name}!</p>
 </main>
 
 <style>
