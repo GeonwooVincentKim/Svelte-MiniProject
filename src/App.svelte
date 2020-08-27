@@ -44,8 +44,8 @@
 
 	let people = [
 		{name: 'Vincent', beltColour: 'black', age: 19, id: 1},
-		{name: 'Vincent', beltColour: 'black', age: 19, id: 2},
-		{name: 'Vincent', beltColour: 'black', age: 19, id: 3},
+		{name: 'Stewart', beltColour: 'orange', age: 16, id: 2},
+		{name: 'Ralph', beltColour: 'brown', age: 18, id: 3},
 	];
 </script>
 
@@ -68,16 +68,8 @@
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<img src={imgSrc}>
 
-	<div>
-		<h4>{people[0].name}</h4>
-		<p>{people[0].beltColour}</p>
-	</div>
-	<div>
-		<h4>{people[1].name}</h4>
-		<p>{people[1].beltColour}</p>
-	</div>
-	<div>
-		<h4>{people[2].name}</h4>
-		<p>{people[2].beltColour}</p>
-	</div>
+	 <!-- Almost like a for-each Loop. -->
+	{#each people as person}
+	
+	{/each}
 </main>
