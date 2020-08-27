@@ -23,13 +23,14 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
 	<p style="color: {beltColour}">{beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
 
 	<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
 	<!-- <input type="text" on:input={handleInput} value={beltColour}> -->
 	
+	<input type="text" bind:value={firstName}>
+	<input type="text" bind:value={lastName}>
 	<!-- 
 		One way bounding, but it controlls all of things 
 		by using 'beltColour'. 
