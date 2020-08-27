@@ -1,5 +1,6 @@
 <script>
-	let name = "Vincent";
+	let firstName = "Vincent";
+	let lastName = "Kim";
 	let beltColour = "black";
 
 	/*
