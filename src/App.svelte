@@ -1,6 +1,11 @@
 <script>
 	let firstName = "Vincent";
 	let lastName = "Kim";
+	
+	/*
+		To output the result of beltColour right here,
+		Delete "color: {beltColor}".
+	*/
 	let beltColour = "black";
 
 	/*
@@ -23,7 +28,7 @@
 </script>
 
 <main>
-	<p style="color: {beltColour}">{beltColour} belt</p>
+	<p>{beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
 
 	<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
