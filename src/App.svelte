@@ -17,6 +17,8 @@
 		inside it. In this case, 'beltColour'.
 	*/
 	$: fullName = `${firstName} ${lastName}`;
+
+	// Run this code-blocks statement everytime.
 	$: {
 		console.log(beltColour);
 		console.log(fullName);
