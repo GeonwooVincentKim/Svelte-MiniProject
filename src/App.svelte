@@ -8,6 +8,13 @@
 	*/
 	let beltColour = "black";
 
+	/* 
+	    The Reactive-Value.
+	    Use a template string to concatenate firstName and lastName
+		regularly. 
+	*/
+	$: fullName = `${firstName} ${lastName}`;
+
 	/*
 	  1. Make sure you have to convert file-form
 		 as 'png' not 'jpg'.
@@ -29,7 +36,7 @@
 
 <main>
 	<!-- Output full-name here. -->
-	<p>{firstName} {lastName} - has {beltColour} belt</p>
+	<p style="color: {beltColour}">{fullName} - has {beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
 
 	<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
