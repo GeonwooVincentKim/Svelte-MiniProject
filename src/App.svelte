@@ -67,4 +67,17 @@
 
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<img src={imgSrc}>
+
+	<div>
+		<h4>{people[0].name}</h4>
+		<p>{people[0].beltColour}</p>
+	</div>
+	<div>
+		<h4>{people[1].name}</h4>
+		<p>{people[1].beltColour}</p>
+	</div>
+	<div>
+		<h4>{people[2].name}</h4>
+		<p>{people[2].beltColour}</p>
+	</div>
 </main>
