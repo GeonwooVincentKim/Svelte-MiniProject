@@ -17,7 +17,7 @@
 		inside it. In this case, 'beltColour'.
 	*/
 	$: fullName = `${firstName} ${lastName}`;
-	$: console.loop_guard(beltColour);
+	$: console.log(beltColour);
 
 	/*
 	  1. Make sure you have to convert file-form
