@@ -10,10 +10,14 @@
 
 	/* 
 	    The Reactive-Value.
-	    Use a template string to concatenate firstName and lastName
-		regularly. 
+	    - 1. Use a template string to concatenate firstName and lastName
+		regularly.
+		
+		- 2. Reactive-Statement is watching whatever values we use
+		inside it. In this case, 'beltColour'.
 	*/
 	$: fullName = `${firstName} ${lastName}`;
+	$: console.loop_guard(beltColour);
 
 	/*
 	  1. Make sure you have to convert file-form
