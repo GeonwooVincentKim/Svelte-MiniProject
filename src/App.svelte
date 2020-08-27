@@ -17,7 +17,10 @@
 		inside it. In this case, 'beltColour'.
 	*/
 	$: fullName = `${firstName} ${lastName}`;
-	$: console.log(beltColour);
+	$: {
+		console.log(beltColour);
+		console.log(fullName);
+	}
 
 	/*
 	  1. Make sure you have to convert file-form
