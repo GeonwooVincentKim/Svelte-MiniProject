@@ -28,7 +28,8 @@
 </script>
 
 <main>
-	<p>{firstName} {lastName} {beltColour} belt</p>
+	<!-- Output full-name here. -->
+	<p>{firstName} {lastName} - has {beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
 
 	<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
