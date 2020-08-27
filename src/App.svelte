@@ -41,6 +41,12 @@
 		// Update on Screen in Real-Time.
 		beltColour = e.target.value;
 	};
+
+	let people = [
+		{name: 'Vincent', beltColour: 'black', age: 19, id: 1},
+		{name: 'Vincent', beltColour: 'black', age: 19, id: 2},
+		{name: 'Vincent', beltColour: 'black', age: 19, id: 3},
+	];
 </script>
 
 <main>
