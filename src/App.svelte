@@ -28,7 +28,7 @@
 </script>
 
 <main>
-	<p>{beltColour} belt</p>
+	<p>{firstName} {lastName} {beltColour} belt</p>
 	<button on:click={handleClick}>Update belt colour</button>
 
 	<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
