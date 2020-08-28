@@ -51,9 +51,15 @@
 	/* 
 	  1. Delete the person from people. 
 	  2. Pass data through into this function.
+
+	  3. 'Filter' is just a regular JavaScript method and it
+	  filters through the array so we can remove certain items out.
+
+	  4. 'Fliter' take a callback-function right here.
 	*/
 	const handleClick = (id) => {
-		console.log(id);
+		// Takes each person as we cycle through it.
+		people = people.filter(() => )
 	};
 </script>
 
