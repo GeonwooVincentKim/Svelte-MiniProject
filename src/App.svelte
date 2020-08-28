@@ -123,10 +123,10 @@
 			and then pass it in as an argument into this handle
 			click-function we could take it here then as a parameter. 
 		-->
-		<button on:click={(e) => {
+		<button on:click={(e) => 
 			// Now we can see the ID of that Ninja.
-			handleClick(e.person.id)
-		}}>delete</button>
+			handleClick(e, person.id)
+		}>delete</button>
 	  </div>
 	<!-- 
 	    1. Adding inside each-block another keyword and
