@@ -113,6 +113,10 @@
 			- 3. This is not getting automatically invoked because
 			it sits inside a function which is not yet invoked until
 			we click on this (button).
+			- 4. Display how we can pass through an argument
+			to a click handler or any other kind of handler function
+			where an event occurs we wrap it inside an inline-function
+			which is not automatically invoked when the code runs.
 		-->
 		<button on:click={() => {
 			// Now we can see the ID of that Ninja.
