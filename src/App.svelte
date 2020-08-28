@@ -92,11 +92,13 @@
 
 		<!-- 
 			- 1. Invokes data. 
-			- 2. Use the inline-function right here,
-			and I'm not invoking this function.
+			- 2. Use the inline-function right here.
+			- 3. This is not getting automatically invoked because
+			it sits inside a function which is not yet invoked until
+			we click on this (button).
 		-->
 		<button on:click={() => {
-
+			handleClick(person.id)
 		}}>delete</button>
 	  </div>
 	<!-- 
