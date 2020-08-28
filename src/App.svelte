@@ -87,9 +87,11 @@
 	-->
 	{#each people as person (person.id)}
 	  <div>
-		  <h4>{person.name}</h4>
-		  <p>{person.age} years old, {person.beltColour} belt.</p>
-		  <button on:click={handleClick(person.id)}>delete</button>
+		<h4>{person.name}</h4>
+		<p>{person.age} years old, {person.beltColour} belt.</p>
+		
+		<!-- Invokes data. -->
+		<button on:click={handleClick(person.id)}>delete</button>
 	  </div>
 	<!-- 
 	    1. Adding inside each-block another keyword and
