@@ -48,9 +48,12 @@
 		{name: 'Ralph', beltColour: 'brown', age: 18, id: 3},
 	];
 
+	/* 
+	  1. Delete the person from people. 
+	  2. Pass data through into this function.
+	*/
 	const handleClick = () => {
-		// delete the person from people.
-		console.log(person);
+		// console.log(person);
 	};
 </script>
 
@@ -86,7 +89,7 @@
 	  <div>
 		  <h4>{person.name}</h4>
 		  <p>{person.age} years old, {person.beltColour} belt.</p>
-		  <button on:click={handleClick}>delete</button>
+		  <button on:click={handleClick(person.id)}>delete</button>
 	  </div>
 	<!-- 
 	    1. Adding inside each-block another keyword and
