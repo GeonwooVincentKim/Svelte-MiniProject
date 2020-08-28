@@ -69,8 +69,9 @@
 	  6. Check if that is not equal to the ID because if they're not 
 	  equal then we want to keep that person in the array.
 	*/
-	const handleClick = (id) => {
+	const handleClick = (e, id) => {
 		people = people.filter((person) => person.id != id);
+		console.log(e);
 	};
 </script>
 
@@ -117,10 +118,14 @@
 			to a click handler or any other kind of handler function
 			where an event occurs we wrap it inside an inline-function
 			which is not automatically invoked when the code runs.
+
+			- 5. Take in the event-object inside of '()' parameter,
+			and then pass it in as an argument into this handle
+			click-function we could take it here then as a parameter. 
 		-->
-		<button on:click={() => {
+		<button on:click={(e) => {
 			// Now we can see the ID of that Ninja.
-			handleClick(person.id)
+			handleClick(e.person.id)
 		}}>delete</button>
 	  </div>
 	<!-- 
