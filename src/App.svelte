@@ -49,7 +49,8 @@
 	];
 
 	const handleClick = () => {
-		// delete the person 
+		// delete the person from people.
+		console.log(person);
 	};
 </script>
 
@@ -77,6 +78,9 @@
 		2. Applying a unique key to each element inside our array
 		and pass that unique key-property to the loop.
 		3. (person.id) of '()' is a parentheses.
+
+		Now we didn't access to variable 'person',
+		so it cannot delete as you want.
 	-->
 	{#each people as person (person.id)}
 	  <div>
