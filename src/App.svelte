@@ -1,51 +1,8 @@
 <script>
-	let firstName = "Vincent";
-	let lastName = "Kim";
-	
-	/*
-		To output the result of beltColour right here,
-		Delete "color: {beltColor}".
-	*/
-	let beltColour = "black";
-
-	/* 
-	    The Reactive-Value.
-	    - 1. Use a template string to concatenate firstName and lastName
-		regularly.
-		
-		- 2. Reactive-Statement is watching whatever values we use
-		inside it. In this case, 'beltColour'.
-	*/
-	$: fullName = `${firstName} ${lastName}`;
-
-	// Run this code-blocks statement everytime.
-	$: {
-		console.log(beltColour);
-		console.log(fullName);
-	}
-
-	/*
-	  1. Make sure you have to convert file-form
-		 as 'png' not 'jpg'.
-	  
-	  2. You should save your file into public file-directory,
-	     not to create a new one in file-directory named 'src'.
-	*/
-	let imgSrc = "images.png";
-
-	const handleClick_colour = () => {
-		beltColour = 'orange';
-	};
-	
-	const handleInput = (e) => {
-		// Update on Screen in Real-Time.
-		beltColour = e.target.value;
-	};
-
 	let people = [
 		{name: 'Vincent', beltColour: 'black', age: 19, id: 1},
 		{name: 'Stuart', beltColour: 'orange', age: 16, id: 2},
-		{name: 'Ralph', beltColour: 'brown', age: 18, id: 3},
+		{name: 'Ralph', beltColour: 'brown', age: 18, id: 3}
 	];
 
 	/* 
@@ -53,7 +10,7 @@
 	  2. Pass data through into this function.
 	*/
 	const handleClick = (id) => {
-		console.log(person);
+		console.log(id);
 	};
 </script>
 
