@@ -56,11 +56,12 @@
 	  filters through the array so we can remove certain items out.
 
 	  4. 'Fliter' take a callback-function right here.
+	  5. Takes each person as we cycle through the array,
+	  and fires a callback function for each person,
+	  and we take person in here, '()'.
 	*/
 	const handleClick = (id) => {
-		// Takes each person as we cycle through the array,
-		// and fires a callback function for each person.
-		people = people.filter(() => )
+		people = people.filter((person) => )
 	};
 </script>
 
