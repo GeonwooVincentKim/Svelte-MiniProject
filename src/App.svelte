@@ -65,11 +65,11 @@
 	  5. If we return true, then it keeps that person in the array,
 	  otherwise if we return false, then it removes that person
 	  from the array.
+
+	  6. Check if that is not equal to the ID because if they're not 
+	  equal then we want to keep that person in the array.
 	*/
 	const handleClick = (id) => {
-		// Check if that is not equal to the ID because
-		// if they're not equal then we want to keep that person
-		// in the array.
 		people = people.filter((person) => person.id != id);
 	};
 </script>
