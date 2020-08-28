@@ -52,7 +52,8 @@
 	  1. Delete the person from people. 
 	  2. Pass data through into this function.
 	*/
-	const handleClick = () => {
+	const handleClick = (id) => {
+		beltColour = 'orange';
 		// console.log(person);
 	};
 </script>
