@@ -58,7 +58,8 @@
 	  4. 'Fliter' take a callback-function right here.
 	*/
 	const handleClick = (id) => {
-		// Takes each person as we cycle through it.
+		// Takes each person as we cycle through the array,
+		// and fires a callback function for each person.
 		people = people.filter(() => )
 	};
 </script>
