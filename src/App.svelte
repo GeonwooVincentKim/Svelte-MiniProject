@@ -69,9 +69,9 @@
 	  6. Check if that is not equal to the ID because if they're not 
 	  equal then we want to keep that person in the array.
 	*/
-	const handleClick = (e, id) => {
+	const handleClick = (id) => {
 		people = people.filter((person) => person.id != id);
-		console.log(e);
+		// console.log(e);
 	};
 </script>
 
@@ -123,9 +123,10 @@
 			and then pass it in as an argument into this handle
 			click-function we could take it here then as a parameter. 
 		-->
-		<button on:click={(e) => 
+		<!-- It's up to you inputing event-handle, 'e'. -->
+		<button on:click={() => 
 			// Now we can see the ID of that Ninja.
-			handleClick(e, person.id)
+			handleClick(person.id)
 		}>delete</button>
 	  </div>
 	<!-- 
