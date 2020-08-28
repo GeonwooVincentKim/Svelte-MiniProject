@@ -33,7 +33,7 @@
 	*/
 	let imgSrc = "images.png";
 
-	const handleClick = () => {
+	const handleClick_colour = () => {
 		beltColour = 'orange';
 	};
 	
@@ -47,6 +47,10 @@
 		{name: 'Stuart', beltColour: 'orange', age: 16, id: 2},
 		{name: 'Ralph', beltColour: 'brown', age: 18, id: 3},
 	];
+
+	const handleClick = () => {
+		// delete the person 
+	};
 </script>
 
 <main>
@@ -78,6 +82,7 @@
 	  <div>
 		  <h4>{person.name}</h4>
 		  <p>{person.age} years old, {person.beltColour} belt.</p>
+		  <button on:click={handleClick}>delete</button>
 	  </div>
 	<!-- 
 	    1. Adding inside each-block another keyword and
