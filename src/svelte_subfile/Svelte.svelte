@@ -58,6 +58,24 @@
 </script>
 
 <main>
+	<!-- Output full-name here. -->
+	<p style="color: {beltColour}">{fullName} - has {beltColour} belt</p>
+	<button on:click={handleClick}>Update belt colour</button>
+
+	<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
+	<!-- <input type="text" on:input={handleInput} value={beltColour}> -->
+	
+	<input type="text" bind:value={firstName}>
+	<input type="text" bind:value={lastName}>
+	<!-- 
+		One way bounding, but it controlls all of things 
+		by using 'beltColour'. 
+	-->
+	<input type="text" bind:value={beltColour}>
+
+	<!-- svelte-ignore a11y-missing-attribute -->
+	<img src={imgSrc}>
+
 	<!-- 
 		1. Almost like a for-each Loop. 
 		2. Applying a unique key to each element inside our array
