@@ -33,14 +33,14 @@
 	*/
 	let imgSrc = "images.png";
 
-	const handleClick_colour = () => {
-		beltColour = 'orange';
-	};
+	// const handleClick_colour = () => {
+	// 	beltColour = 'orange';
+	// };
 	
-	const handleInput = (e) => {
-		// Update on Screen in Real-Time.
-		beltColour = e.target.value;
-	};
+	// const handleInput = (e) => {
+	// 	// Update on Screen in Real-Time.
+	// 	beltColour = e.target.value;
+	// };
 
 	let people = [
 		{name: 'Vincent', beltColour: 'black', age: 19, id: 1},
@@ -53,29 +53,28 @@
 	  2. Pass data through into this function.
 	*/
 	const handleClick = (id) => {
-		beltColour = 'orange';
-		// console.log(person);
+		console.log(person);
 	};
 </script>
 
 <main>
 	<!-- Output full-name here. -->
-	<p style="color: {beltColour}">{fullName} - has {beltColour} belt</p>
-	<button on:click={handleClick}>Update belt colour</button>
+	<!-- <p style="color: {beltColour}">{fullName} - has {beltColour} belt</p> -->
+	<!-- <button on:click={handleClick}>Update belt colour</button> -->
 
 	<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
 	<!-- <input type="text" on:input={handleInput} value={beltColour}> -->
 	
-	<input type="text" bind:value={firstName}>
-	<input type="text" bind:value={lastName}>
+	<!-- <input type="text" bind:value={firstName}> -->
+	<!-- <input type="text" bind:value={lastName}> -->
 	<!-- 
 		One way bounding, but it controlls all of things 
 		by using 'beltColour'. 
 	-->
-	<input type="text" bind:value={beltColour}>
+	<!-- <input type="text" bind:value={beltColour}> -->
 
 	<!-- svelte-ignore a11y-missing-attribute -->
-	<img src={imgSrc}>
+	<!-- <img src={imgSrc}> -->
 
 	<!-- 
 		1. Almost like a for-each Loop. 
