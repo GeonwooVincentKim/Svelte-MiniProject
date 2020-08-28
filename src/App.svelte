@@ -125,7 +125,7 @@
 		-->
 		<!-- It's up to you inputing event-handle, 'e'. -->
 		<button on:click={(e) => 
-			// Now we can see the ID of that Ninja.
+			// Now we can see the ID.
 			handleClick(e, person.id)
 		}>delete</button>
 	  </div>
