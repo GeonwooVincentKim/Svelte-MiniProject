@@ -75,7 +75,7 @@
 
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<img src={imgSrc}>
-	
+
 	<!-- 
 		1. Almost like a for-each Loop. 
 		2. Applying a unique key to each element inside our array
@@ -90,8 +90,14 @@
 		<h4>{person.name}</h4>
 		<p>{person.age} years old, {person.beltColour} belt.</p>
 
-		<!-- Invokes data. -->
-		<button on:click={handleClick(person.id)}>delete</button>
+		<!-- 
+			- 1. Invokes data. 
+			- 2. Use the inline-function right here,
+			and I'm not invoking this function.
+		-->
+		<button on:click={() => {
+
+		}}>delete</button>
 	  </div>
 	<!-- 
 	    1. Adding inside each-block another keyword and
