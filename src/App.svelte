@@ -98,6 +98,7 @@
 			we click on this (button).
 		-->
 		<button on:click={() => {
+			// Now we can see the ID of that Ninja.
 			handleClick(person.id)
 		}}>delete</button>
 	  </div>
