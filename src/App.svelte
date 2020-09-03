@@ -80,12 +80,12 @@
 		it just prints out 'Greater than 20'.
 
 		- 2. And if I change this value as '15',
-		it just prints out 'Greater than 5'.
+		it prints out 'Greater than 5'.
 
 		- 3. Otherwise if I change this value as '5',
-		it doesn't prints anything.
+		it prints out 'Not greater than 5'.
 	*/
-	let num = 15;
+	let num = 5;
 </script>
 
 <!-- 
@@ -98,7 +98,9 @@
 {#if num > 20}
 	<p>Greater than 20</p>
 {:else if num > 5}
- 	<p>Greater than 5</p>
+	<p>Greater than 5</p>
+{:else}
+	<p>Not greater than 5</p> 
 {/if}
 <main>
 	<main>
@@ -165,9 +167,5 @@
 		{:else}
 		  <p>There are no people to show...</p>
 		{/each}
-		
-		{#if num > 20}
-			 <p>Greater than 20</p>
-		{/if}
 	</main>
 </main>
