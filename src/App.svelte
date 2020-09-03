@@ -135,6 +135,9 @@
 		{#each people as person (person.id)}
 		  <div>
 			<h4>{person.name}</h4>
+			{#if person.beltColour == 'black'}
+				<p><strong>Vincent has been appeared!!</strong></p>
+			{/if}
 			<p>{person.age} years old, {person.beltColour} belt.</p>
 	
 			<!-- 
