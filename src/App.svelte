@@ -75,7 +75,17 @@
 	};
 	
 	// But it display 'num' when I change it's value.
-	let num = 5;
+	/*
+		- 1. If I change this value as '25',
+		it just prints out 'Greater than 20'.
+
+		- 2. And if I change this value as '15',
+		it just prints out 'Greater than 5'.
+
+		- 3. Otherwise if I change this value as '5',
+		it doesn't prints anything.
+	*/
+	let num = 15;
 </script>
 
 <!-- 
