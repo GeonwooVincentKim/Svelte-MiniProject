@@ -73,7 +73,16 @@
 		people = people.filter((person) => person.id != id);
 		console.log(e);
 	};
+	
+	let num = 5;
 </script>
+
+<!-- 
+	If you want to output something if number is over 20, 
+	it could say {#if} (curly braces bash if).
+ -->
+{#if num > 20}
+{/if}
 
 <main>
 	<!-- Output full-name here. -->
