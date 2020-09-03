@@ -74,6 +74,7 @@
 		console.log(e);
 	};
 	
+	// But it display 'num' when I change it's value.
 	let num = 5;
 </script>
 
@@ -82,6 +83,7 @@
 	it could say {#if} (curly braces bash if).
  -->
 {#if num > 20}
+ <p>Greater than 20</p>
 {/if}
 
 <main>
