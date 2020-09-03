@@ -82,11 +82,77 @@
 	If you want to output something if number is over 20, 
 	it could say {#if} (curly braces bash if).
  -->
- {#if num > 20}
- <p>Greater than 20</p>
+{#if num > 20}
+	<p>Greater than 20</p>
 {/if}
 <main>
-	{#if num > 20}
- 		<p>Greater than 20</p>
-	{/if}
+	<main>
+
+		<!-- Output full-name here. -->
+		<p style="color: {beltColour}">{fullName} - has {beltColour} belt</p>
+		<button on:click={handleClick}>Update belt colour</button>
+	
+		<!-- Two way bounding, 'handleInput' and 'beltColour'. -->
+		<!-- <input type="text" on:input={handleInput} value={beltColour}> -->
+		
+		<input type="text" bind:value={firstName}>
+		<input type="text" bind:value={lastName}>
+		<!-- 
+			One way bounding, but it controlls all of things 
+			by using 'beltColour'. 
+		-->
+		<input type="text" bind:value={beltColour}>
+	
+		<!-- svelte-ignore a11y-missing-attribute -->
+		<img src={imgSrc}>
+	
+		<!-- 
+			1. Almost like a for-each Loop. 
+			2. Applying a unique key to each element inside our array
+			and pass that unique key-property to the loop.
+			3. (person.id) of '()' is a parentheses.
+	
+			Now we didn't access to variable 'person',
+			so it cannot delete as you want.
+		-->
+		{#each people as person (person.id)}
+		  <div>
+			<h4>{person.name}</h4>
+			<p>{person.age} years old, {person.beltColour} belt.</p>
+	
+			<!-- 
+				- 1. Invokes data. 
+				- 2. Use the inline-function right here.
+				- 3. This is not getting automatically invoked because
+				it sits inside a function which is not yet invoked until
+				we click on this (button).
+				- 4. Display how we can pass through an argument
+				to a click handler or any other kind of handler function
+				where an event occurs we wrap it inside an inline-function
+				which is not automatically invoked when the code runs.
+	
+				- 5. Take in the event-object inside of '()' parameter,
+				and then pass it in as an argument into this handle
+				click-function we could take it here then as a parameter. 
+			-->
+			<!-- It's up to you inputing event-handle, 'e'. -->
+			<button on:click={(e) => 
+				// Now we can see the ID.
+				handleClick(e, person.id)
+			}>delete</button>
+		  </div>
+		<!-- 
+			1. Adding inside each-block another keyword and
+			it's going to be colon else inside here.
+			2. Comment out all of list-contents in variable 'people' and
+			save it, then you can see, 'There are no people to show.'.
+		-->
+		{:else}
+		  <p>There are no people to show...</p>
+		{/each}
+		
+		{#if num > 20}
+			 <p>Greater than 20</p>
+		{/if}
+	</main>
 </main>
