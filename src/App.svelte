@@ -75,15 +75,20 @@
 	};
 	
 	// But it display 'num' when I change it's value.
-	let num = 25;
+	let num = 5;
 </script>
 
 <!-- 
-	If you want to output something if number is over 20, 
+	- 1. If you want to output something if number is over 20, 
 	it could say {#if} (curly braces bash if).
+
+	- 2. Otherwise, if you want to output some value that doesn't
+	over 20, but over 5, it could say {:else if} (colon else if).
  -->
 {#if num > 20}
 	<p>Greater than 20</p>
+{:else if num > 5}
+ 	<p>Greater than 5</p>
 {/if}
 <main>
 	<main>
